@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_u9Hx4E9tEeu3Hq3lyOnfjg" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_B56BsF_lEeuvfeCmtw86YA" name="CInventoryWeaponItem" visibility="public">
+    <generalization xmi:id="_bNQwwF_vEeuvfeCmtw86YA" general="_YMQd4F_vEeuvfeCmtw86YA"/>
+    <ownedAttribute xmi:id="_Wt_lkF_uEeuvfeCmtw86YA" name="m_MaxAmmo" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wt_lkV_uEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wt_lkl_uEeuvfeCmtw86YA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ZYbykF_uEeuvfeCmtw86YA" name="m_WeaponIndex" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZYbykV_uEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZYbykl_uEeuvfeCmtw86YA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_betikF_uEeuvfeCmtw86YA" name="m_Ammo" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_betikV_uEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_betikl_uEeuvfeCmtw86YA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_yS22gF_zEeuvfeCmtw86YA" name="GetMaxAmmo();"/>
+    <ownedOperation xmi:id="_z4Fu8F_zEeuvfeCmtw86YA" name="GetStartAmmo();"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YMQd4F_vEeuvfeCmtw86YA" name="CinventoryItem" visibility="public">
+    <ownedAttribute xmi:id="_7635oF_zEeuvfeCmtw86YA" name="m_Overlay;" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_764gsF_zEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_764gsV_zEeuvfeCmtw86YA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9x4ekF_zEeuvfeCmtw86YA" name="m_Stackable;" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9x4ekV_zEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9x4ekl_zEeuvfeCmtw86YA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="__3ansF_zEeuvfeCmtw86YA" name="m_Droppable;" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__3ansV_zEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__3ansl_zEeuvfeCmtw86YA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_W4WzwF_0EeuvfeCmtw86YA" name="SetStackable(bool);"/>
+    <ownedOperation xmi:id="_Yak0cF_0EeuvfeCmtw86YA" name="IsStackable() { return m_Stackable; };"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_y1HL0F_vEeuvfeCmtw86YA" name="idEntity" visibility="public">
+    <ownedAttribute xmi:id="_qS3ogF_wEeuvfeCmtw86YA" name="m_ModelLODCur;" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qS3ogV_wEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qS3ogl_wEeuvfeCmtw86YA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_r3xJwF_wEeuvfeCmtw86YA" name="m_SkinLODCur;" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r3xJwV_wEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r3xJwl_wEeuvfeCmtw86YA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_tvKwQF_wEeuvfeCmtw86YA" name="m_MinLODBias" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tvKwQV_wEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tvKwQl_wEeuvfeCmtw86YA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_jKoagF_wEeuvfeCmtw86YA" name="CheckDormant( void )"/>
+    <ownedOperation xmi:id="_lIz-cF_wEeuvfeCmtw86YA" name="DormantBegin( void )"/>
+    <ownedOperation xmi:id="_n4SccF_wEeuvfeCmtw86YA" name="IsActive( void ) const"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6zCrsF_vEeuvfeCmtw86YA" name="m_Owner" memberEnd="_6zCrsV_vEeuvfeCmtw86YA _6zCrtF_vEeuvfeCmtw86YA" navigableOwnedEnd="_6zCrtF_vEeuvfeCmtw86YA">
+    <ownedEnd xmi:id="_6zCrsV_vEeuvfeCmtw86YA" name="cinventoryItems" type="_YMQd4F_vEeuvfeCmtw86YA" association="_6zCrsF_vEeuvfeCmtw86YA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6zCrsl_vEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6zCrs1_vEeuvfeCmtw86YA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_6zCrtF_vEeuvfeCmtw86YA" name="idEntitys" type="_y1HL0F_vEeuvfeCmtw86YA" association="_6zCrsF_vEeuvfeCmtw86YA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6zCrtV_vEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6zCrtl_vEeuvfeCmtw86YA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_89g_MF_vEeuvfeCmtw86YA" name="m_Item" memberEnd="_89g_MV_vEeuvfeCmtw86YA _89g_NF_vEeuvfeCmtw86YA" navigableOwnedEnd="_89g_NF_vEeuvfeCmtw86YA">
+    <ownedEnd xmi:id="_89g_MV_vEeuvfeCmtw86YA" name="cinventoryItems" type="_YMQd4F_vEeuvfeCmtw86YA" association="_89g_MF_vEeuvfeCmtw86YA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_89g_Ml_vEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_89g_M1_vEeuvfeCmtw86YA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_89g_NF_vEeuvfeCmtw86YA" name="idEntitys" type="_y1HL0F_vEeuvfeCmtw86YA" association="_89g_MF_vEeuvfeCmtw86YA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_89g_NV_vEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_89g_Nl_vEeuvfeCmtw86YA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9Pop8F_vEeuvfeCmtw86YA" name="m_Bind_Master" memberEnd="_9Pop8V_vEeuvfeCmtw86YA _9Pop9F_vEeuvfeCmtw86YA" navigableOwnedEnd="_9Pop9F_vEeuvfeCmtw86YA">
+    <ownedEnd xmi:id="_9Pop8V_vEeuvfeCmtw86YA" name="cinventoryItems" type="_YMQd4F_vEeuvfeCmtw86YA" association="_9Pop8F_vEeuvfeCmtw86YA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9Pop8l_vEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9Pop81_vEeuvfeCmtw86YA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_9Pop9F_vEeuvfeCmtw86YA" name="idEntitys" type="_y1HL0F_vEeuvfeCmtw86YA" association="_9Pop8F_vEeuvfeCmtw86YA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9Pop9V_vEeuvfeCmtw86YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9Pop9l_vEeuvfeCmtw86YA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AykzsGVrEeuH2ottQZSYPw" name="IdTypeDef" visibility="public">
+    <ownedOperation xmi:id="_FOeXQGVrEeuH2ottQZSYPw" name="MatchesVirtualFunction( const idTypeDef &amp;matchfunc ) const;"/>
+    <ownedOperation xmi:id="_IZBAoGVrEeuH2ottQZSYPw" name="AddField( idTypeDef *fieldtype, const char *name );"/>
+    <ownedOperation xmi:id="_J-kCIGVrEeuH2ottQZSYPw" name="AddFunctionParm( idTypeDef *parmtype, const char *name );"/>
+    <ownedOperation xmi:id="_LMOIEGVrEeuH2ottQZSYPw" name="Inherits( const idTypeDef *basetype ) const;"/>
+    <ownedOperation xmi:id="_NQIgkGVrEeuH2ottQZSYPw" name="MatchesType( const idTypeDef &amp;matchtype ) const;"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_X9s2gGVrEeuH2ottQZSYPw" name="IdScriptObject" visibility="public">
+    <ownedOperation xmi:id="_bJZ9gGVrEeuH2ottQZSYPw" name="Save( idSaveGame *savefile ) const"/>
+    <ownedOperation xmi:id="_c4fVgGVrEeuH2ottQZSYPw" name="Restore( idRestoreGame *savefile );"/>
+    <ownedOperation xmi:id="_dgPSAGVrEeuH2ottQZSYPw" name="Free( void );"/>
+    <ownedOperation xmi:id="_gGGhAGVrEeuH2ottQZSYPw" name="SetType( const char *typeName );"/>
+    <ownedOperation xmi:id="_hie_cGVrEeuH2ottQZSYPw" name="ClearObject( void );"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AcVSYGV1EeuH2ottQZSYPw" name="CInventory" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Q6FBwGV2EeuH2ottQZSYPw" name="idSaveGame" visibility="public">
+    <ownedOperation xmi:id="_Xa5qcGV2EeuH2ottQZSYPw" name="Write( const void *buffer, int len );"/>
+    <ownedOperation xmi:id="_YDbqEGV2EeuH2ottQZSYPw" name="WriteInt( const int value );"/>
+    <ownedOperation xmi:id="_Zzq4oGV2EeuH2ottQZSYPw" name="WriteUnsignedInt( const unsigned int value );"/>
+    <ownedOperation xmi:id="_dBlmIGV2EeuH2ottQZSYPw" name="WriteObject( const idClass *obj );"/>
+    <ownedOperation xmi:id="_eSHZ4GV2EeuH2ottQZSYPw" name="WriteStaticObject( const idClass &amp;obj );"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iaVMcGV2EeuH2ottQZSYPw" name="idRestoregame" visibility="public">
+    <ownedAttribute xmi:id="_ppPDIGV2EeuH2ottQZSYPw" name="buildNumber;" visibility="private"/>
+    <ownedAttribute xmi:id="_tDdHQGV2EeuH2ottQZSYPw" name="codeRevision;" visibility="private"/>
+    <ownedOperation xmi:id="_kLBuAGV2EeuH2ottQZSYPw" name="CreateObjects( void );"/>
+    <ownedOperation xmi:id="_mPOaYGV2EeuH2ottQZSYPw" name="RestoreObjects( void );"/>
+    <ownedOperation xmi:id="_nShqcGV2EeuH2ottQZSYPw" name="DeleteObjects( void );"/>
+  </packagedElement>
+</uml:Model>
